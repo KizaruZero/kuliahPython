@@ -1,0 +1,84 @@
+mat1 = [
+    [5, 0],
+    [2, 6],
+]
+mat2 = [
+    [1, 0],
+    [4, 2],
+]
+
+for x in range(len(mat1)):
+    for y in range(len(mat1[0])):
+        print(mat1[x][y] + mat2[x][y], end=' ')
+    print()
+mat1 = [
+    [5, 0],
+    [2, 6],
+]
+mat2 = [
+    [1, 0],
+    [4, 2],
+]
+for x in range(0, len(mat1)):
+    for y in range(0, len(mat1[0])):
+        print (mat1[x][y] - mat2[x][y], end=' '),print
+matrix1 = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+matrix2 = [
+    [2, 4, 6],
+    [8, 10, 12],
+    [14, 16, 18]
+]
+matrix3 = [
+    [0, -1, 2],
+    [3, -4, 5],
+    [-6, 7, -8]
+]
+result_matrix = [[0, 0, 0] for _ in range(3)]  # Initialize a 3x3 matrix with zeros
+# Perform element-wise addition
+for i in range(3):
+    for j in range(3):
+        result_matrix[i][j] = matrix1[i][j] + matrix2[i][j] + matrix3[i][j]
+# Print the result matrix
+for row in result_matrix:
+    print(row)
+# pertambahan
+'''matr1 = [[1,0,1],
+         [0,0,1],
+         [0,0,1]
+         ]
+matr2 = [[0,1,0],
+         [1,1,0],
+         [1,1,0]
+         ]
+result = [[0,0,0],[0,0,0],[0,0,0]]
+for row in range(len(matr1)):
+    for column in range(len(matr1[0])):
+
+for r in result:
+    print(r)'''
+# perkalian 3x3 matriks
+matr1 = [
+    [1, 0, 1],
+    [0, 0, 1],
+    [0, 0, 1]
+]
+
+matr2 = [
+    [0, 1, 0],
+    [1, 1, 0],
+    [1, 1, 0]
+]
+
+result = [[0, 0, 0] for _ in range(3)]  # Initialize a 3x3 matrix with zeros
+
+# Perform matrix multiplication
+for i in range(3):
+    for j in range(3):
+        for k in range(3):
+            result[i][j] += matr1[i][k] * matr2[k][j]
+
+# Print the result matrix
