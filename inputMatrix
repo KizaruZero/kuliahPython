@@ -1,0 +1,61 @@
+
+'''Row = int(input("Enter the number of rows: "))
+Column = int(input("Masukan Jumlah Kolom: "))
+Matrix = []
+print("Masukan elemen matriks 1:")
+for row in range(Row):
+    a = []
+    for column in range(Column):
+        a.append(int(input()))
+    Matrix.append(a)
+
+print("Matriks yang dimasukkan:")
+for row in range(Row):
+    for column in range(Column):
+        print(Matrix[row][column], end=" ")
+    print()'''
+Row = int(input("Enter the number of rows of matrix 1: "))
+Column = int(input("Masukan Jumlah Kolom untuk matrix 1: "))
+Matrix1 = []
+# Input matrix 1
+print("Masukan elemen matriks 1:")
+for row in range(Row):
+    a = []
+    for column in range(Column):
+        a.append(int(input()))
+    Matrix1.append(a)
+# Display matrix 1
+print("Matriks yang dimasukkan:")
+for row in range(Row):
+    for column in range(Column):
+        print(Matrix1[row][column], end=" ")
+    print()
+# Input matrix 2
+Row = int(input("Enter the number of rows of matrix 2: "))
+Column = int(input("Masukan Jumlah Kolom untuk matrix 2: "))
+Matrix2 = []
+print("Masukan elemen matriks 2:")
+for row in range(Row):
+    b = []
+    for column in range(Column):
+        b.append(int(input()))
+    Matrix2.append(b)
+# Display matrix 2
+print("Matriks yang dimasukkan:")
+for row in range(Row):
+    for column in range(Column):
+        print(Matrix2[row][column], end=" ")
+    print()
+# Initialize result matrix with zeros
+result = [[0] * Column for _ in range(Row)]
+
+# Perform matrix addition
+for row in range(Row):
+    for column in range(Column):
+        result[row][column] = Matrix1[row][column] + Matrix2[row][column]
+
+# Display the result matrix
+print("Hasil penjumlahan matriks:")
+for r in result:
+    print(r)
+
